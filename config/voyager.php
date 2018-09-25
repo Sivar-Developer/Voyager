@@ -15,7 +15,7 @@ return [
         'default_role'                 => 'user',
         'namespace'                    => null,
         'default_avatar'               => 'users/default.png',
-        'redirect'                     => '/admin',
+        'redirect'                     => '/opennbox/console/admin',
     ],
 
     /*
@@ -110,7 +110,7 @@ return [
         /*
          * Set whether or not the multilingual is supported by the BREAD input.
          */
-        'enabled' => false,
+        'enabled' => true,
 
         /*
          * Set whether or not the admin layout default is RTL.
@@ -127,6 +127,8 @@ return [
          */
         'locales' => [
             'en',
+            'ar',
+            'ku'
             //'pt',
         ],
     ],
@@ -199,7 +201,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#4527A0',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 

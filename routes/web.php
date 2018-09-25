@@ -10,8 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::group(['prefix' => 'admin'], function () {
+Route::redirect('opennbox', '/opennbox/console/admin', 301);
+Route::redirect('opennbox/console', '/opennbox/console/admin', 301);
+Route::group(['prefix' => 'opennbox/console/admin'], function () {
     Voyager::routes();
 });
 
